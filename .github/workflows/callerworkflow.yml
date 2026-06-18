@@ -2,5 +2,7 @@ name: caller of reusable workflow
 on: push
 jobs:
     callreusableworkflow:
-        uses: ./.github/workflows/reusablewkflow.yml
-        
+      uses: ./.github/workflows/reusablewkflow.yml
+      with:
+        name-string:
+            "I am Kishan"
